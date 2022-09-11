@@ -1,0 +1,84 @@
+/* CSS Document */
+/* auteur: Sanne 't Hooft */
+
+/********************/
+/* KLEUREN EN MATEN */
+/********************/
+
+.cmda-card {
+	/* hoogte als de kaart ingeklapt is*/
+	max-height:15.5rem;
+	/* achtergrondkleur van de kaarten */
+	background-color:rgb(223,79,93);
+	/* maat van de afgeronde hoeken */
+	border-radius: .4rem;
+	/* padding van de card */
+	padding:0 0 3.5em;
+	/* margin van de card */
+	margin:0 0 1rem;
+}
+.cmda-card.active {
+	/* de maximale hoogte van de kaart indien uitgeschoven */
+	max-height:37.5rem;
+}
+.cmda-card .card-handvat {
+	/* breedte van het handvat */
+	width:5rem;
+	/* hoogte van het handvat */
+	height:2.5rem;	
+	/* achtergrondkleur van het handvat */
+	background-color:rgba(255,255,255,.75);
+	/* kleur van het pijltje op het handvat */
+	color:rgb(47,50,55);
+}
+
+/* nb. Onderstaande regels alleen aanpassen als je snapt wat er staat */
+
+/***********/
+/* DE CARD */
+/***********/
+
+.cmda-card {
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    border: 2px solid white;
+    
+	-webkit-transition:.5s ease-out;
+	transition:.5s ease-out;
+    background-color:rgb(47,50,55);
+}
+
+/***************/
+/* HET HANDVAT */
+/***************/
+
+.cmda-card .card-handvat {
+	position:absolute;
+	display:block;
+	box-sizing:border-box;
+	bottom:0;
+	left:50%;
+	-webkit-transform:translateX(-50%);
+	transform:translateX(-50%);
+	font-size:1rem;
+	text-align:center;
+	border-radius:50% 50% 0 0 / 100% 100% 0 0;
+}
+.cmda-card .card-handvat::after {
+	content: "\25BC";
+	position:absolute;
+	display:block;
+	width:1rem;
+	height:1rem;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-25%);
+}
+.cmda-card.active .card-handvat::after {
+	content: "\25B2";
+	transform:translate(-50%,-50%);
+}

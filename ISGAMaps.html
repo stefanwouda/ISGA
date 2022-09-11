@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>ISGA - Map of places</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/webfonts/fonts.css" rel="stylesheet">
+    <link href="styles/map-meerdere-locaties.css" rel="stylesheet">
+    <link href="styles/carrousel/css/carrousel.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <a href="#" onClick="history.go(-2)">Home</a>
+
+        <h1 class="topbar">Map of places</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="ISGAList.html">LIST</a></li>
+            <!--
+    -->
+            <li><a href="ISGAMaps.html">MAP</a></li>
+        </ul>
+    </nav>
+
+    <!-- Map -->
+    <div id="cmda-map" class="cmda-map"></div>
+
+    <!-- Carrousel -->
+    <section class="cmda-carrousel">
+        <ul>
+            <li class="cmda-carrousel-item">
+                <div class="my-content">
+                    <a href="ISGAStadskantine.html">
+                        <h3>Stadskantine</h3>
+                        <p>Van Woustraat 120, Amsterdam</p>
+                        <hr>
+                        <p>OPEN NOW</p>
+                    </a>
+                </div>
+            </li>
+            <li class="cmda-carrousel-item">
+                <div class="my-content">
+                    <a target=_blank href="https://www.coffeecompany.nl/">
+                        <h3>Coffeecompany</h3>
+                        <p>Wibautstraat 7, Amsterdam</p>
+                        <hr>
+                        <p>OPEN NOW</p>
+                    </a>
+                </div>
+                <li class="cmda-carrousel-item">
+                    <div class="my-content">
+                        <a target=_blank href="https://www.thestudenthotel.com/">
+                            <h3>The Student Hotel</h3>
+                            <p>Wibautstraat 129, Amsterdam</p>
+                            <hr>
+                            <p>OPEN NOW</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="cmda-carrousel-item">
+                    <div class="my-content">
+                        <a target=_blank href="https://www.filteramsterdam.nl/">
+                            <h3>Filter</h3>
+                            <p>Valkenburgerstraat 124, Amsterdam</p>
+                            <hr>
+                            <p>OPEN NOW</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="cmda-carrousel-item">
+                    <div class="my-content">
+                        <a target=_blank href="http://livezoku.com/spaces-overview/">
+                            <h3>Zoku</h3>
+                            <p>Weesperstraat 105, Amsterdam</p>
+                            <hr>
+                            <p>OPEN NOW</p>
+                        </a>
+                    </div>
+                    <li class="cmda-carrousel-item">
+                        <div class="my-content">
+                            <a target=_blank href="http://www.juicebro.com/">
+                                <h3>Juice Brothers</h3>
+                                <p>Van Woustraat 151, Amsterdam</p>
+                                <hr>
+                                <p>OPEN NOW</p>
+                            </a>
+                        </div>
+                    </li>
+        </ul>
+    </section>
+    <script src="js/carrousel-js/cmda-carrousel.js"></script>
+    <script src="cmda-map-js/map.js"></script>
+</body>
+
+</html>

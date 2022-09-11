@@ -1,0 +1,41 @@
+/* CSS Document */
+/* auteur: Sanne 't Hooft */
+html, body {
+	width:100%;
+	height:83%;
+	padding:0;
+	margin:0;
+}
+
+/* om de map als geheel te stylen */
+.cmda-map {
+	width:100%;
+	height:100%;
+	-webkit-text-size-adjust:100%;
+}
+
+/* om het info window dat boven een marker verschijnt te stylen */
+.cmda-map .gm-style-iw {
+	background-color: #df4f5d;
+    border: 2px solid black;
+}
+
+/* om de titel in het info te stylen */
+.cmda-map .gm-style-iw h2 {
+	font-family: "LemonMilk", sans-serif;
+    color: white;
+    padding: 10px 0px 10px 10px;
+}
+
+/* om de paragraaf in het info te stylen */
+.cmda-map .gm-style-iw p {
+	font-family: "NeueHaasGrotesk Medium", sans-serif;
+    padding-left: 10px;
+}
+
+/* om de links in het info te stylen */
+.cmda-map .gm-style-iw a {
+    font-family: "NeueHaasGrotesk Light", sans-serif;
+    color: black;
+    padding-left: 10px;
+}
